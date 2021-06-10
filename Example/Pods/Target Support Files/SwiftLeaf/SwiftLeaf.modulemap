@@ -1,0 +1,6 @@
+framework module SwiftLeaf {
+  umbrella header "SwiftLeaf-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - SwiftLeaf (0.1.0)
+
+DEPENDENCIES:
+  - SwiftLeaf (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftLeaf:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftLeaf: c7279bcbb303b1ed7789c417dd9341bec85d7203
+
+PODFILE CHECKSUM: 19177159e11d899725419ae90997b704666c4c0b
+
+COCOAPODS: 1.10.1
