@@ -219,7 +219,7 @@ public class WaterfallLayout: UICollectionViewLayout {
             let heightHeader = delegate?.collectionView?(collectionView!, layout: self, heightForHeaderIn: section)
                 ?? self.headerHeight
             if heightHeader > 0 {
-                attributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, with: IndexPath(row: 0, section: section))
+                attributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, with: IndexPath(row: 0, section: section))
                 attributes.frame = CGRect(x: 0, y: top, width: collectionView!.bounds.size.width, height: heightHeader)
                 headersAttributes[section] = attributes
                 allItemAttributes.append(attributes)
@@ -264,7 +264,7 @@ public class WaterfallLayout: UICollectionViewLayout {
             let footerHeight = delegate?.collectionView?(collectionView!, layout: self, heightForFooterIn: section) ?? self.footerHeight
 
             if footerHeight > 0 {
-                attributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, with: IndexPath(item: 0, section: section))
+                attributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, with: IndexPath(item: 0, section: section))
                 attributes.frame = CGRect(x: 0, y: top, width: collectionView!.bounds.size.width, height: footerHeight)
                 footersAttributes[section] = attributes
                 allItemAttributes.append(attributes)
@@ -314,9 +314,9 @@ public class WaterfallLayout: UICollectionViewLayout {
     override public func layoutAttributesForSupplementaryView(ofKind elementKind: String,
                                                               at indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
         var attribute: UICollectionViewLayoutAttributes?
-        if elementKind == UICollectionElementKindSectionHeader {
+        if elementKind == UICollectionView.elementKindSectionHeader {
             attribute = headersAttributes[indexPath.section]
-        } else if elementKind == UICollectionElementKindSectionFooter {
+        } else if elementKind == UICollectionView.elementKindSectionFooter {
             attribute = footersAttributes[indexPath.section]
         }
         return attribute ?? UICollectionViewLayoutAttributes()
