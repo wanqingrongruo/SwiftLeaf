@@ -23,6 +23,7 @@
 		B8FA03DF578B76EF67835472F422F74E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		C197800C360404067F0A84278CDA2F4A /* Pods-SwiftLeaf_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C32529E0410914C09E11A67EAC93D4 /* Pods-SwiftLeaf_Tests-dummy.m */; };
 		D5F758398730E5F8E4D138487CCECA6A /* SwiftLeaf-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FDA2BC85AD2C135278B190F4ADB921 /* SwiftLeaf-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E086155C268F286A0068B74B /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086155B268F286A0068B74B /* UIFont+extension.swift */; };
 		EE415DDA56BF1A9A63E19F34321BFEF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D6CC2D65028804FB2256A83E21C67D07 /* Pods-SwiftLeaf_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLeaf_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D77D92DD60821ACA5B54D8353DB4380E /* SwiftLeaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLeaf.release.xcconfig; sourceTree = "<group>"; };
+		E086155B268F286A0068B74B /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
 		E70BE2D7161DD7C43171B1F8B8DDFE57 /* String+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F971EDEE8B78A1154DA4F22ADEA65B75 /* Pods-SwiftLeaf_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftLeaf_Example.modulemap"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				1E30800E14C45F642B01A7957766CA16 /* Date+extension.swift */,
 				E70BE2D7161DD7C43171B1F8B8DDFE57 /* String+extension.swift */,
 				1B43B89ED390347FC4121C76138B79C0 /* UIDevice+extension.swift */,
+				E086155B268F286A0068B74B /* UIFont+extension.swift */,
 			);
 			name = Extensions;
 			path = SwiftLeaf/Classes/Extensions;
@@ -427,6 +430,7 @@
 				0818B13DCDA6F61C2AD6E4808530A24D /* Date+extension.swift in Sources */,
 				796473FE4F7F33679DCA9B7B86E7CAB1 /* Debounce.swift in Sources */,
 				A9F83724BC0A6A497AAB5BB981A9E059 /* String+extension.swift in Sources */,
+				E086155C268F286A0068B74B /* UIFont+extension.swift in Sources */,
 				AACADD0E879C9A96726587074059CDB4 /* SwiftLeaf-dummy.m in Sources */,
 				B58CF829C5F05BB18C009C13AC90FCD4 /* Throttle.swift in Sources */,
 				9A2A88DF7CA1AD4A1B6C5563554C9C4A /* UIDevice+extension.swift in Sources */,
