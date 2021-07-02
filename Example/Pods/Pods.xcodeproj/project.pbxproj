@@ -24,6 +24,7 @@
 		C197800C360404067F0A84278CDA2F4A /* Pods-SwiftLeaf_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C32529E0410914C09E11A67EAC93D4 /* Pods-SwiftLeaf_Tests-dummy.m */; };
 		D5F758398730E5F8E4D138487CCECA6A /* SwiftLeaf-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FDA2BC85AD2C135278B190F4ADB921 /* SwiftLeaf-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E086155C268F286A0068B74B /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086155B268F286A0068B74B /* UIFont+extension.swift */; };
+		E086155E268F2E3E0068B74B /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086155D268F2E3E0068B74B /* UIColor+extension.swift */; };
 		EE415DDA56BF1A9A63E19F34321BFEF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		D6CC2D65028804FB2256A83E21C67D07 /* Pods-SwiftLeaf_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLeaf_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D77D92DD60821ACA5B54D8353DB4380E /* SwiftLeaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLeaf.release.xcconfig; sourceTree = "<group>"; };
 		E086155B268F286A0068B74B /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
+		E086155D268F2E3E0068B74B /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		E70BE2D7161DD7C43171B1F8B8DDFE57 /* String+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F971EDEE8B78A1154DA4F22ADEA65B75 /* Pods-SwiftLeaf_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftLeaf_Example.modulemap"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				E70BE2D7161DD7C43171B1F8B8DDFE57 /* String+extension.swift */,
 				1B43B89ED390347FC4121C76138B79C0 /* UIDevice+extension.swift */,
 				E086155B268F286A0068B74B /* UIFont+extension.swift */,
+				E086155D268F2E3E0068B74B /* UIColor+extension.swift */,
 			);
 			name = Extensions;
 			path = SwiftLeaf/Classes/Extensions;
@@ -433,6 +436,7 @@
 				E086155C268F286A0068B74B /* UIFont+extension.swift in Sources */,
 				AACADD0E879C9A96726587074059CDB4 /* SwiftLeaf-dummy.m in Sources */,
 				B58CF829C5F05BB18C009C13AC90FCD4 /* Throttle.swift in Sources */,
+				E086155E268F2E3E0068B74B /* UIColor+extension.swift in Sources */,
 				9A2A88DF7CA1AD4A1B6C5563554C9C4A /* UIDevice+extension.swift in Sources */,
 				4A7AE56EC7CE5D3C4ECCF29AC10C52EE /* WaterfallLayout.swift in Sources */,
 			);
