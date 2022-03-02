@@ -73,3 +73,31 @@ private extension UIFont.FontTypography {
         return fontMetrics.scaledFont(for: baseFont)
     }
 }
+
+extension UIFont {
+    var isItalic: Bool {
+        return fontDescriptor.symbolicTraits.contains(.traitItalic)
+    }
+
+    func setItalic() -> UIFont {
+        if isItalic {
+            return self
+        } else {
+            var symTraits = fontDescriptor.symbolicTraits
+            symTraits.insert([.traitItalic])
+            let fontDescriptorVar = fontDescriptor.withSymbolicTraits(symTraits)
+            return UIFont(descriptor: fontDescriptorVar!, size: 0)
+        }
+    }
+
+    func removeitalic() -> UIFont {
+        if !isItalic {
+            return self
+        } else {
+            var symTraits = fontDescriptor.symbolicTraits
+            symTraits.remove([.traitItalic])
+            let fontDescriptorVar = fontDescriptor.withSymbolicTraits(symTraits)
+            return UIFont(descriptor: fontDescriptorVar!, size: 0)
+        }
+    }
+}

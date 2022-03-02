@@ -25,3 +25,29 @@ public extension String {
         return data
     }
 }
+
+public extension String {
+    var deletingLastPathComponent: String {
+        return (self as NSString).deletingLastPathComponent
+    }
+
+    var int: Int? {
+        return Int(self)
+    }
+
+    var url: URL? {
+        return URL(string: self)
+    }
+
+    var lastPathComponent: String {
+        return (self as NSString).lastPathComponent
+    }
+
+    func appendingPathComponent(_ str: String) -> String {
+        return (self as NSString).appendingPathComponent(str)
+    }
+
+    func appendingPathExtension(_ str: String) -> String? {
+        return (self as NSString).appendingPathExtension(str)
+    }
+}
