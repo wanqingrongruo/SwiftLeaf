@@ -23,6 +23,7 @@
 		B8FA03DF578B76EF67835472F422F74E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		C197800C360404067F0A84278CDA2F4A /* Pods-SwiftLeaf_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C32529E0410914C09E11A67EAC93D4 /* Pods-SwiftLeaf_Tests-dummy.m */; };
 		D5F758398730E5F8E4D138487CCECA6A /* SwiftLeaf-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FDA2BC85AD2C135278B190F4ADB921 /* SwiftLeaf-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E05F0BB9286AB25600ADEA1B /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05F0BB8286AB25600ADEA1B /* KeyboardObserver.swift */; };
 		E086155C268F286A0068B74B /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086155B268F286A0068B74B /* UIFont+extension.swift */; };
 		E086155E268F2E3E0068B74B /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086155D268F2E3E0068B74B /* UIColor+extension.swift */; };
 		E0DB878927CF65A700D2DFA9 /* CGPath+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB878827CF65A700D2DFA9 /* CGPath+extension.swift */; };
@@ -97,6 +98,7 @@
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D6CC2D65028804FB2256A83E21C67D07 /* Pods-SwiftLeaf_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLeaf_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D77D92DD60821ACA5B54D8353DB4380E /* SwiftLeaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLeaf.release.xcconfig; sourceTree = "<group>"; };
+		E05F0BB8286AB25600ADEA1B /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		E086155B268F286A0068B74B /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
 		E086155D268F2E3E0068B74B /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		E0DB878827CF65A700D2DFA9 /* CGPath+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+extension.swift"; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				E0DB87A527CF6C0400D2DFA9 /* Environment.swift */,
+				E05F0BB8286AB25600ADEA1B /* KeyboardObserver.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				E0DB879F27CF6B4C00D2DFA9 /* CGSize+extension.swift in Sources */,
 				E086155C268F286A0068B74B /* UIFont+extension.swift in Sources */,
 				E0DB879D27CF6B3100D2DFA9 /* CMTime+extension.swift in Sources */,
+				E05F0BB9286AB25600ADEA1B /* KeyboardObserver.swift in Sources */,
 				E0DB879527CF688000D2DFA9 /* NSObject+extension.swift in Sources */,
 				AACADD0E879C9A96726587074059CDB4 /* SwiftLeaf-dummy.m in Sources */,
 				B58CF829C5F05BB18C009C13AC90FCD4 /* Throttle.swift in Sources */,

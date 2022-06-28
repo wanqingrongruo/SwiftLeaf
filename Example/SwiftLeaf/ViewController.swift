@@ -11,11 +11,14 @@ import SwiftLeaf
 
 class ViewController: UIViewController {
 
+    let keyboard = KeyboardObserver()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         verifyThrottler()
         verifyDebouncer()
+        observeKeyboard()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +44,35 @@ class ViewController: UIViewController {
                 print("----\(sum)")
             }
         }
+    }
+}
+
+extension ViewController {
+    func observeKeyboard() {
+        keyboard.observe { [weak self] (event) -> Void in
+            guard let self = self else {
+                return
+            }
+            switch event.type {
+            case .willShow, .willHide, .willChangeFrame:
+                if event.type == .willHide {
+                    self.hideKeyBoard(event: event)
+                } else {
+                    self.showKeybord(event: event)
+                }
+            default:
+                break
+            }
+        }
+    }
+
+    func hideKeyBoard(event: KeyboardEvent) {
+       // do something
+    }
+
+    func showKeybord(event: KeyboardEvent) {
+        _ = event.keyboardFrameEnd
+        // do something
     }
 }
 
